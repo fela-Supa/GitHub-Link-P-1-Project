@@ -84,4 +84,3 @@ document
     // clear the form
     document.getElementById('comment-form').reset();
   });
-  

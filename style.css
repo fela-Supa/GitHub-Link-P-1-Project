@@ -120,10 +120,13 @@ h1.temp {
 }
 
 #comment-form {
-    width: 40%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
     background-color: transparent;
     color: white;
+    left:250px;
+    position: absolute;
+    bottom: 0;
   }
   
   #comment-text {
@@ -133,7 +136,7 @@ h1.temp {
 
   }
   
-  .comment {
+  /* .comment {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -141,15 +144,28 @@ h1.temp {
     color: white;
   }
   
-  .comment-text {
+  .comment .comment-form .comment-text {
     font-size: 14px;
     background-color: transparent;
-    color: white;
+    color: black;
   }
   
   .comment-author {
     font-size: 12px;
     font-style: italic;
     color: black;
+  } */
+
+  .element{
+    position: relative;
+    top: 20px;
   }
+
+  .card {
+    position:fixed;
+  }
+  
+  /* .section {
+    position: relative;
+  } */
   
