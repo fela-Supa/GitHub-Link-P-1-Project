@@ -61,3 +61,27 @@ document
         likeButton.classList.remove('clicked');
     }
   });
+
+  document.getElementById('comment-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // prevent the form from reloading the page
+  
+    // get the comment text from the form
+    var commentText = document.getElementById('comment-text').value;
+  
+    // create a new element to hold the comment
+    var commentElement = document.createElement('div');
+    commentElement.classList.add('comment');
+  
+    // add the comment text to the element
+    var commentTextElement = document.createElement('p');
+    commentTextElement.classList.add('comment-text');
+    commentTextElement.textContent = commentText;
+    commentElement.appendChild(commentTextElement);
+  
+    // add the comment element to the page
+    document.getElementById('comments').appendChild(commentElement);
+  
+    // clear the form
+    document.getElementById('comment-form').reset();
+  });
+  
