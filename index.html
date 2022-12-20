@@ -29,18 +29,23 @@
             <div class="humidity" style="margin-left: 10px;">Humidity: 60%</div>
             <div class="wind" style="padding-left: 10px;">Wind speed: 6.2 km/h</div>
           </div>
-              <!-- Like and dislike buttons -->
+         
+  <!-- Like and dislike buttons -->
      <div class="like-dislike">
         <button class="like">Like</button>
         <button class="dislike">Dislike</button>
       </div>
-      <form id="comment-form">
-        <textarea id="comment-text" placeholder="Enter your comment here"></textarea>
-        <button type="submit">Post Comment</button>
-      </form>
+    </div>
+      
+    <div id="comments">
+       <form id="comment-form" onsubmit="return checkComment();">
+         <textarea id="comment-text" placeholder="Enter your comment here"></textarea>
+         <button type="submit">Submit</button>
+       </form>
+    </div> 
+        
       <div id="comments">
         <!-- comments will be added here -->
-      </div>      
-    </div>    
+      </div>    
 </body>
 </html>
