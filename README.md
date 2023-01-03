@@ -10,7 +10,7 @@ This is a good and easy way of interacting with one's climate environment, this 
 To make the Whole system work and operate I did the code that was required for it and used an API for the code to access the information from.
 
 API URL
-https://openweathermap.org/city/5419384
+* https://openweathermap.org/city/5419384
 
 # Getting Started
 To get started you mainly need to type in your area code or to be more specific your region/city so that you may get the results of the weather the Humidity, windspeed and the °C.
